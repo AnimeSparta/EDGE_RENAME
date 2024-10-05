@@ -4,22 +4,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", 7414019)
-    API_HASH  = os.environ.get("API_HASH", "d463ed3d695f5cd4164029405ad8388e")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID    = os.environ.get("API_ID", 20478011)
+    API_HASH  = os.environ.get("API_HASH", "0e4dcf39643e83c3c174a0d2370e5b4a")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7077374297:AAGgxSqJOrJ5GR8E3iiphrAzpL1FT1RW3Fk")
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Zoro")
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://suryagupta1928:6thfnQ3AxzK6VJUA@cluster0.6ppqasw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/0624f0e874718a066a3f6.mp4")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1350488685').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '2061656269').split()]
     FORCE_SUB_1 = os.environ.get("FORCE_SUB_1", "EdgeBotSupport")
     FORCE_SUB_2 = os.environ.get("FORCE_SUB_2", "EdgeBots")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001863937035))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002131803512"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1002306621324))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002306621324"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
